@@ -18,21 +18,12 @@ do
     echo "Unknown parameter: $param"
 done
 
-# FESetup
 cd $FESWORKDIR
-FESetup setup.in
-FESetup morph.in
 
-# Preparation & Production MD & Analysis
-cd _perturbations/gromacs
-perts=$(ls)
-for pert in $perts
+mkdir anal
+for i in `seq 0 10`
 do
-    fes prep -d $pert/complex
-    fes prod -d $pert/complex
-    fes anal -d $pert/complex
-
-    fes prep -d $pert/solvated
-    fes prod -d $pert/solvated
-    fes anal -d $pert/solvated
+    cp prod/_sol.$i.dhdl.xvg anal/dhdl.$i.xvg
 done
+
+alchemical_analysis -d anal

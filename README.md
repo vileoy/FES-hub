@@ -18,7 +18,12 @@ $ ./install.sh
 
 ## 2 Usage
 
-It contains a one-for-all command `fes exec`, which amount to a total of  `FESetup`, `fes prep`, `fes prod` separated steps. All `fes xxxx` commands possess a `-d` option that specifies the working directory (default: pwd). Some instants show the details:
+It contains a one-for-all command `fes exec`, which amounts to a total of separated steps: `FESetup`, `fes prep`, `fes prod`, and `fes anal`. All `fes xxxx` commands possess a `-d` option that allows you to specify the working directory (default: pwd). Here are some instants show the details:
+
+```shell
+$ # Information
+$ fes info -d /FES/WORK/DIR
+```
 
 ```shell
 $ # one-for-all
@@ -36,7 +41,7 @@ $ fes prod -d /FES/WORK/DIR
 ```
 
 ```shell
-$ # Information
-$ fes info -d /FES/WORK/DIR
+$ # Analysis
+$ fes anal -d /FES/WORK/DIR
 ```
 
