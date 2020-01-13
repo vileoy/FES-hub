@@ -32,7 +32,7 @@ $ fes exec -d /FES/WORK/DIR
 
 ```bash
 $ # File Format Convesion
-$ fes conv -d /FES/WORK/DIR -f /RAW/FILE
+$ fes conv -d /FES/WORK/DIR -f RAWFILE
 ```
 
 ```bash
