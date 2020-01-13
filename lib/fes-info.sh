@@ -22,7 +22,7 @@ echo "===== Wellcome to FES-hub! ====="
 echo
 echo "- Author : Haoyu Lin"
 echo "- Version: 1.0.0"
-echo "- Usage  : \`fes xxxx\`, e.g. \`fes exec\`."
+echo "- Usage: \`fes xxxx\`, e.g. \`fes exec\`."
 echo
 echo "- Running env:"
 echo "  - FESHUBHOME: $FESHUBHOME"

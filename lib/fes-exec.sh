@@ -23,16 +23,13 @@ cd $FESWORKDIR
 FESetup setup.in
 FESetup morph.in
 
-# Preparation & Production MD & Analysis
+# Preparation & Production MD
 cd _perturbations/gromacs
 perts=$(ls)
 for pert in $perts
 do
     fes prep -d $pert/complex
     fes prod -d $pert/complex
-    fes anal -d $pert/complex
-
     fes prep -d $pert/solvated
     fes prod -d $pert/solvated
-    fes anal -d $pert/solvated
 done

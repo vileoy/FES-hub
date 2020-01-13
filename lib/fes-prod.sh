@@ -24,6 +24,6 @@ cd $FESWORKDIR
 nstates=11
 for (( i = 0; i < nstates; i++ ))
 do
-	sed 's/$NUM/'"$i"'/' $FESHUBHOME/misc/fes-job.slurm > fes-job$i.slurm
+	sed 's/$NUM/'"$i"'/g' $FESHUBHOME/misc/fes-job.slurm > fes-job$i.slurm
 	sbatch fes-job$i.slurm
 done
